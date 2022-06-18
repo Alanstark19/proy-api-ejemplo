@@ -1,0 +1,15 @@
+//Funciones para consumir la API
+
+const baseUrl = 'http://jsonplaceholder.typicode.com/posts'
+//const apikey = '000000'
+/*getUsersByAPI nos ayudará a realizar la petición a la api*/
+export async function getUsersByAPI () {
+    const pageIndex = 0
+    const response = await fetch(`${baseUrl}`)
+    const responseJson = await response.json()
+    return responseJson
+  }//fin de getUsersByAPI
+
+export default {
+getUsersByAPI
+}//exportando las funciones

@@ -1,0 +1,13 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+
+const Title = ({children}) => {
+<h1 className='title'>{children}</h1>
+}//fin de Title
+
+
+Title.propTypes = {
+    children: PropTypes.string.isRequired
+}
+
+export default Title
